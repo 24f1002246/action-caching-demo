@@ -24,7 +24,8 @@ jobs:
         id: cache-uv # Give the step an id to check its output
         with:
           path: ~/.cache/uv
-          key: cache-7845754
+          key: cache-e4da0b5
+
 
       - name: Install dependencies
         run: uv pip install -r requirements.txt
