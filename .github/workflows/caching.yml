@@ -21,11 +21,10 @@ jobs:
 
       - name: Cache uv dependencies
         uses: actions/cache@v4
-        id: cache-uv # Give the step an id to check its output
+        id: cache-uv
         with:
           path: ~/.cache/uv
           key: cache-e4da0b5
-
 
       - name: Install dependencies
         run: uv pip install -r requirements.txt
