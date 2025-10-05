@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: uv pip install -r requirements.txt
 
-      - name: prime-cache-7845754
+      - name: prime-cache-e4da0b5
         run: |
           if [[ "${{ steps.cache-uv.outputs.cache-hit }}" == "true" ]]; then
             echo "Cache hit! Dependencies were restored."
